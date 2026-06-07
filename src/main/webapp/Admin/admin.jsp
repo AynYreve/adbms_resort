@@ -117,23 +117,14 @@ try{
     while(rs.next()){
 
 %>
-
         <tr>
-
             <td><%= rs.getInt("id") %></td>
-
             <td><%= rs.getString("username") %></td>
-
             <td><%= rs.getString("fullname") %></td>
-
             <td><%= rs.getString("email") %></td>
-
             <td><%= rs.getString("created_at") %></td>
-
             <td><%= rs.getString("role") %></td>
-
         </tr>
-
 <%
 
     }
@@ -166,7 +157,6 @@ finally{
 <h1 style="margin-top:50px;">Bookings</h1>
 
 <table>
-
     <tr>
         <th>Booking ID</th>
         <th>Guest Name</th>
@@ -175,6 +165,8 @@ finally{
         <th>Adults</th>
         <th>Children</th>
         <th>Reserved Month</th>
+        <th>Reserved Day</th>
+        <th>Reserved Time</th>
         <th>Created At</th>
     </tr>
 
@@ -195,33 +187,21 @@ try{
     );
 
     String bookingSql = "SELECT * FROM booking";
-
     bookingPst = bookingConn.prepareStatement(bookingSql);
-
     bookingRs = bookingPst.executeQuery();
-
     while(bookingRs.next()){
-
 %>
-
     <tr>
-
         <td><%= bookingRs.getInt("book_id") %></td>
-
         <td><%= bookingRs.getString("guestname") %></td>
-
         <td><%= bookingRs.getString("email") %></td>
-
         <td><%= bookingRs.getString("room_type") %></td>
-
         <td><%= bookingRs.getInt("adult_count") %></td>
-
         <td><%= bookingRs.getInt("children_count") %></td>
-
         <td><%= bookingRs.getString("reserved_month") %></td>
-        
+        <td><%= bookingRs.getString("reserved_day") %></td>
+        <td><%= bookingRs.getString("reserved_time") %></td>
         <td><%= bookingRs.getString("created_at") %></td>
-
     </tr>
 
 <%
@@ -255,3 +235,4 @@ finally{
 
 </body>
 </html>
+
