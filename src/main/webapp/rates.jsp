@@ -1,7 +1,7 @@
 <%-- 
     Document   : rates
     Created on : Jun 5, 2026, 5:58:21 AM
-    Author     : Julian Edriel
+    Author     : AynYreve
 --%>
 
 <%@page language="java" contentType="text/html" pageEncoding="UTF-8"%>
