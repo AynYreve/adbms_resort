@@ -1,7 +1,7 @@
 <%-- 
     Document   : userslogin
     Created on : Jun 5, 2026, 8:11:36 AM
-    Author     : Julian Edriel
+    Author     : AynYreve
 --%>
 <%boolean isLoggedIn = session.getAttribute("user_id") != null;%>
 
