@@ -1,7 +1,7 @@
 <%-- 
     Document   : superior
     Created on : Jun 5, 2026, 7:15:52 AM
-    Author     : Julian Edriel
+    Author     : AynYreve
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
