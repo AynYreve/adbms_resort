@@ -1,7 +1,7 @@
 <%-- 
     Document   : usersregistration
     Created on : Jun 5, 2026, 3:22:11 AM
-    Author     : Julian Edriel
+    Author     : AynYreve
 --%>
 <% 
     String userError = (String) session.getAttribute("user_error");
