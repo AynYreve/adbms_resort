@@ -2,7 +2,7 @@ package management;
 
 /**
  *
- * @author Julian Edriel
+ * @author AynYreve
  */
 import java.io.IOException;
 import java.sql.Connection;
@@ -21,6 +21,7 @@ public class UserBooking extends HttpServlet {
 
         HttpSession session = request.getSession();
 
+        Integer userId = (Integer) session.getAttribute("user_id");
         String fullname = (String) session.getAttribute("fullname");
         String email = (String) session.getAttribute("email");
 
@@ -49,18 +50,19 @@ public class UserBooking extends HttpServlet {
                 ""
             );
 
-            String sql = "INSERT INTO booking " + "(guestname, email, room_type, adult_count, children_count, reserved_month, reserved_day, reserved_time) " + "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO booking " + "(user_id, guestname, email, room_type, adult_count, children_count, reserved_month, reserved_day, reserved_time) " + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
             pst = conn.prepareStatement(sql);
-
-            pst.setString(1, fullname);
-            pst.setString(2, email);
-            pst.setString(3, roomType);
-            pst.setInt(4, Integer.parseInt(adultCount));
-            pst.setInt(5, Integer.parseInt(childrenCount));
-            pst.setString(6, bookingMonth);
-            pst.setInt(7, Integer.parseInt(bookingDay));
-            pst.setString(8, fullBookingTime);
+            
+            pst.setInt(1, userId);
+            pst.setString(2, fullname);
+            pst.setString(3, email);
+            pst.setString(4, roomType);
+            pst.setInt(5, Integer.parseInt(adultCount));
+            pst.setInt(6, Integer.parseInt(childrenCount));
+            pst.setString(7, bookingMonth);
+            pst.setInt(8, Integer.parseInt(bookingDay));
+            pst.setString(9, fullBookingTime);
 
             pst.executeUpdate();
 
