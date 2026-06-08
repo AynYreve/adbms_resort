@@ -1,7 +1,7 @@
 <%-- 
     Document   : home
     Created on : Jun 5, 2026, 5:09:42 AM
-    Author     : Julian Edriel
+    Author     : AynYreve
 --%>
 <% boolean isLoggedIn = session.getAttribute("user_id") != null; %>
 <%@page language="java" contentType="text/html" pageEncoding="UTF-8"%>
