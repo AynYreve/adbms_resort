@@ -1,7 +1,7 @@
 <%-- 
     Document   : adminbookdelete
     Created on : Jun 8, 2026, 5:38:22 AM
-    Author     : Julian Edriel
+    Author     : AynYreve
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
