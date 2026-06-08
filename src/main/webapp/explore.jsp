@@ -1,7 +1,7 @@
 <%-- 
     Document   : explore
     Created on : Jun 5, 2026, 4:55:40 AM
-    Author     : Julian Edriel
+    Author     : AynYreve
 --%>
 
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
