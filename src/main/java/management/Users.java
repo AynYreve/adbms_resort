@@ -1,7 +1,7 @@
 package management;
 /**
  *
- * @author Julian Edriel
+ * @author AynYreve
  */
 
 import java.io.Serializable;
