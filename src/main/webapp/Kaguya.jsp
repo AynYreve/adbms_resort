@@ -1,7 +1,7 @@
 <%-- 
     Document   : Kaguya
     Created on : Jun 7, 2026, 5:02:16 PM
-    Author     : Julian Edriel
+    Author     : AynYreve
 
     DO NOT DELETE. THERE ARE JSP PAGES DEPENDING ON THIS PAGE. DELETING THIS JSP MIGHT RESULT IN MASSIVE ERRORS
 --%>
